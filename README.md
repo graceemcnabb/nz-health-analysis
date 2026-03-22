@@ -112,8 +112,7 @@ analysis, and indicator discovery. GitHub renders this notebook directly in the 
 
 ## Repository Structure
 ```
-nz-health-analysis/
-│        
+nz-health-analysis/    
 │
 ├── pipeline/
 │   ├── 01_explore.ipynb
@@ -152,6 +151,3 @@ nz-health-analysis/
 [Read the full case study](case-study.pdf)
 
 
-pandas
-matplotlib
-jupyter
