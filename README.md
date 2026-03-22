@@ -21,10 +21,10 @@ Power BI data modelling, and a four-page interactive dashboard.
 
 ## Dashboard Preview
 
-![Executive Summary](screenshots/executive-summary.png)
-![Trends Over Time](screenshots/trends-over-time.png)
-![Health Equity](screenshots/health-equity.png)
-![Population Deep Dive](screenshots/population-deep-dive.png)
+![Executive Summary](screenshots/nz-health-page1.png)
+![Trends Over Time](screenshots/nz-health-page2.png)
+![Health Equity](screenshots/nz-health-page3.png)
+![Population Deep Dive](screenshots/nz-health-page4.png)
 
 ---
 
