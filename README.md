@@ -57,3 +57,104 @@ Three CSV files downloaded from the
 ## Python Pipeline
 
 Five scripts process the raw data into analysis-ready CSVs:
+```
+pipeline/
+├── 01_explore.ipynb     ← EDA: data shape, nulls, flag distributions
+├── 02_clean.py          ← Clean prevalence file, handle flags, standardise columns
+├── 03_transform.py      ← Feature engineering: group_category, gender_gap, ci_width
+├── 04_clean_others.py   ← Clean time series (wide→long reshape) and rate ratios
+└── 05_validate.py       ← Validation checks throughout dashboard development
+```
+
+### How to Run
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/gracemcnabb/nz-health-analysis
+cd nz-health-analysis
+```
+
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Download the data**
+
+Download all three CSV files from the 
+[NZ Health Survey Data Explorer](https://minhealthnz.shinyapps.io/nz-health-survey-2024-25-annual-data-explorer/) 
+and place them in `data/raw/`
+
+**4. Run scripts in order**
+```bash
+python pipeline/02_clean.py
+python pipeline/03_transform.py
+python pipeline/04_clean_others.py
+python pipeline/05_validate.py
+```
+
+**5. Open the Jupyter notebook**
+```bash
+jupyter notebook pipeline/01_explore.ipynb
+```
+
+Cleaned outputs will be saved to `data/processed/` ready to load into Power BI.
+
+---
+
+## Exploratory Analysis
+
+The Jupyter notebook [`01_explore.ipynb`](pipeline/01_explore.ipynb) documents the 
+initial data exploration including dataset shape, null value distributions, flag 
+analysis, and indicator discovery. GitHub renders this notebook directly in the browser.
+
+---
+
+## Repository Structure
+```
+nz-health-analysis/
+│
+├── data/
+│   ├── raw/                  
+│   └── processed/            
+│
+├── pipeline/
+│   ├── 01_explore.ipynb
+│   ├── 02_clean.py
+│   ├── 03_transform.py
+│   ├── 04_clean_others.py
+│   └── 05_validate.py
+│
+├── screenshots/
+│   └── *.png
+│
+├── case-study.pdf
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Tools & Skills
+
+- **Python** — pandas, Jupyter Notebook, VS Code
+- **Data cleaning** — flag handling, wide-to-long reshape (melt), 
+  embedded character stripping, null management
+- **Data modelling** — star schema, DAX UNION dimension table, 
+  cross-table slicer synchronisation
+- **DAX** — CALCULATE, AVERAGE, COUNTROWS, dynamic measures
+- **Power BI** — multi-page dashboard, synchronised slicers, 
+  rate ratio visualisation, KPI cards
+- **Health analytics** — rate ratio interpretation, deprivation quintile 
+  analysis, NZ health equity context
+
+---
+
+## Case Study
+
+[Read the full case study](case-study.pdf)
+
+
+pandas
+matplotlib
+jupyter
