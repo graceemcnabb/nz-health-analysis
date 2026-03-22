@@ -95,7 +95,7 @@ python pipeline/05_validate.py
 
 **5. Open the Jupyter notebook**
 ```bash
-jupyter notebook pipeline/01_explore.ipynb
+jupyter notebook 01_explore.ipynb
 ```
 
 Cleaned outputs will be saved to `data/processed/` ready to load into Power BI.
