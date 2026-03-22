@@ -148,6 +148,6 @@ nz-health-analysis/
 
 ## Case Study
 
-[Read the full case study](case-study.pdf)
+[Read the full case study](health-case-study.pdf)
 
 
