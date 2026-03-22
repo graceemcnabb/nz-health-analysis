@@ -83,7 +83,7 @@ pip install -r requirements.txt
 
 Download all three CSV files from the 
 [NZ Health Survey Data Explorer](https://minhealthnz.shinyapps.io/nz-health-survey-2024-25-annual-data-explorer/) 
-and place them in `data/raw/`
+
 
 **4. Run scripts in order**
 ```bash
@@ -98,7 +98,7 @@ python pipeline/05_validate.py
 jupyter notebook 01_explore.ipynb
 ```
 
-Cleaned outputs will be saved to `data/processed/` ready to load into Power BI.
+Cleaned outputs will be ready to load into Power BI.
 
 ---
 
