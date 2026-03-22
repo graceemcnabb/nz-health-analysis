@@ -113,10 +113,7 @@ analysis, and indicator discovery. GitHub renders this notebook directly in the 
 ## Repository Structure
 ```
 nz-health-analysis/
-│
-├── data/
-│   ├── raw/                  
-│   └── processed/            
+│        
 │
 ├── pipeline/
 │   ├── 01_explore.ipynb
